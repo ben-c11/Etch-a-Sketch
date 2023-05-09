@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.wrapper{
+    background-color: #483c32;
+    height: 100vh;
+    width: 100vw;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border-radius: 20px; 
+    height: 90vh;
+    width: 65vw;
+}
+
+.title-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+.title{
+    color: gold;
+    font-size: 3em;
+}
+
+.placeholder{
+    background-color: #4c6a20;
+    border-radius: 10px;
+    height: 60vh;
+    width: 70%;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    border: black solid 1px;
+    position: relative;
+    width: 65vw;
+    
+}
+
+.controls{
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*NOW JUST arrange the central options. might put them in another box to arrange without affecting circles??? Trying that above ^^^^^^ */
+
+.left-knob, .right-knob{
+    margin: 1%;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    background-color:antiquewhite;
+
+}
+
+div.right-knob{
+    position: relative;
+    left: 69.5%;
+}
+
+.grid-size{
+    border: black 1px solid;
+}
+
