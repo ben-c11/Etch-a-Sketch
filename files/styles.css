@@ -43,15 +43,21 @@
 
 .bottom{
     display: flex;
+    flex: 1;
     align-items: center;
-    border: black solid 1px;
+    justify-content: space-evenly;
     position: relative;
     width: 65vw;
-    
+
+    color: gold;
+}
+
+.bottom p{
+    font-size: 1.5em;
 }
 
 .controls{
-    border: 1px black solid;
+    width: 70vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -67,12 +73,9 @@
 
 }
 
-div.right-knob{
-    position: relative;
-    left: 69.5%;
-}
-
-.grid-size{
-    border: black 1px solid;
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh
 }
 
