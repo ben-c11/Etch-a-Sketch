@@ -40,15 +40,29 @@
 
 .title{
     color: gold;
-    font-size: 5em;
+    font-size: 4vw;
+    font-weight: 600;
 }
 
-.placeholder{
+#grid-container{
+    display: flex;
     background-color: #4c6a20;
     border-radius: 10px;
     height: 60vh;
     width: 70%;
 }
+
+/*grid sqares*/
+#grid-column{
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#grid-row{
+    flex: 1;
+}
+
 
 .bottom{
     display: flex;
@@ -66,23 +80,22 @@
 }
 
 .controls{
-    width: 70vh;
+    width: 40vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-/*NOW JUST arrange the central options. might put them in another box to arrange without affecting circles??? Trying that above ^^^^^^ */
+
 
 .left-knob, .right-knob{
     margin: 1%;
-    width: 7em;
-    height: 7em;
+    width: 9vw;
+    height: 9vw;
     border-radius: 50%;
     background-color:antiquewhite;
-
 }
 
-.colour, .grid-size{
+.color, .grid-size{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,4 +105,5 @@
     flex-direction: column;
     gap: 1vh
 }
+
 

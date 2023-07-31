@@ -19,7 +19,7 @@
                        Etch-A-Sketch
                     </div>
                 </div>
-                <div class="placeholder">
+                <div id="grid-container">
 
                 </div>
 
@@ -28,11 +28,12 @@
                     <div class="controls">
                         <div class="grid-size">
                             <p>Grid Size</p>
-                            <input type="range" value="20" min="1" max="64">
+                            <input id='slider'type="range" value="16" min="1" max="64">
+                            <output id="output"></output>
                             <div id="grid-num"></div>
                         </div>
-                        <div class="colour">
-                            <p>Colour</p>
+                        <div class="color">
+                            <p>Color</p>
                             <input type="color">
                         </div>
                         <div class="buttons">
