@@ -45,23 +45,14 @@
 }
 
 #grid-container{
-    display: flex;
+    display: grid;
     background-color: #4c6a20;
     border-radius: 10px;
     height: 60vh;
     width: 70%;
 }
 
-/*grid sqares*/
-#grid-column{
-    display:flex;
-    flex-direction: column;
-    flex: 1;
-}
 
-#grid-row{
-    flex: 1;
-}
 
 
 .bottom{
@@ -107,3 +98,6 @@
 }
 
 
+.hover{
+    background-color: #006400;
+}

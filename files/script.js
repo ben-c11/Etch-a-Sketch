@@ -7,20 +7,21 @@ gridSliderOutput.innerText = gridSlider.value + 'x' + gridSlider.value;
 
 function createGrid(){
     //Generate grid square & give each one an ID                        
-    for(let i = 0; i < parseInt(gridSlider.value); i++){
-        const gridCol = document.createElement('div');
-        gridContainer.append(gridCol);
-        gridCol.setAttribute('id', 'grid-column');
-        
-        for(let j = 0; j < parseInt(gridSlider.value); j++){
-            const gridRow = document.createElement('div');
-            gridCol.append(gridRow);
-            gridRow.setAttribute('id','grid-row');
-        }
+    let gridSize = parseInt(gridSlider.value);
+
+    for(let i = 0; i < gridSize**2; i++){
+        let gridBox = document.createElement('div');
+        gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
+        gridContainer.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
+        gridContainer.insertAdjacentElement('afterbegin', gridBox);
     }
     
 }
 createGrid()
+
+const hover = document.querySelector('.hover');
+
+
 
 
 
