@@ -45,15 +45,25 @@
 }
 
 #grid-container{
-    display: grid;
+    display: flex;
     background-color: #4c6a20;
     border-radius: 10px;
     height: 60vh;
     width: 70%;
+    flex-direction:column;
 }
 
+.grid-col{
+    display: flex;
+    flex: 1;
+}
+.grid-row{
+    flex: 1;
+}
 
-
+#grid-box{
+    
+}
 
 .bottom{
     display: flex;
