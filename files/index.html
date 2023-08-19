@@ -28,18 +28,23 @@
                     <div class="controls">
                         <div class="grid-size">
                             <p>Grid Size</p>
-                            <input id='slider'type="range" value="16" min="1" max="64">
-                            <output id="output"></output>
+                            <input id='slider'type="range" value="16" min="2" max="99"/>
+                            <span id="output"></span>
+                            <button id="set-size">Set Size</button>
+                            <span id="output-size"></span>
                             <div id="grid-num"></div>
                         </div>
                         <div class="color">
                             <p>Color</p>
-                            <input type="color">
+                            <input id="color-picker" type="color">
                         </div>
                         <div class="buttons">
-                            <button>Rainbow</button>
-                            <button>Erase</button>
-                            <button>Clear</button>
+                            <div class="half-buttons">
+                            <button class="rainbow-btn">Rainbow</button>
+                            <button class="random-btn">Random</button>
+                            </div>
+                            <button class="erase-btn">Erase</button>
+                            <button class="reset-btn">Reset</button>
                         </div>
                     </div>
                     <div class="right-knob"></div>

@@ -59,11 +59,12 @@
 }
 .grid-row{
     flex: 1;
+    border: 0.1px black solid;
 }
 
-#grid-box{
+/*#grid-box{
     
-}
+}*/
 
 .bottom{
     display: flex;
