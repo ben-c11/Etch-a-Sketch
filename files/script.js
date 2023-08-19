@@ -38,16 +38,6 @@ function createGrid(gridSize){
             gridRow.addEventListener('mouseover', colorGrid)
         }
     
-        /*
-        let gridSize = parseInt(gridSlider.value);
-        let gridBox;
-        for(let i = 0; i < gridSize**2; i++){
-        gridBox = document.createElement('div');
-        gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
-        gridContainer.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
-        gridContainer.insertAdjacentElement('afterbegin', gridBox);
-        }*/
-    
 }
 
 
@@ -139,13 +129,4 @@ function rainbow(){
 function rainbowToggleFalse(){
     rainbowToggle = false;
 }
-/*
-function colorGrid(color, gridBox){
-    if(gridBox.buttons == 1){
-        if(gridBox.target.classList == ''){
-            let pixel = gridBox.target;
-            pixel.style.backgroundColor = color;
-        }
-    }
-}*/
 }
