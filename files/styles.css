@@ -35,13 +35,21 @@
     display: flex;
     width: 65vw;
     justify-content: center;
+    align-items: center;
     margin: 2%;
+    flex-direction: column;
 }
 
 .title{
     color: gold;
     font-size: 4vw;
     font-weight: 600;
+}
+
+.color-toggle{
+    color: gold;
+    font-size: 1.5vw;
+    font-weight: 400;
 }
 
 #grid-container{

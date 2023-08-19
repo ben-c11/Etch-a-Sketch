@@ -1,5 +1,6 @@
 bgColor = '#4c6a20';
 penColor = 'black';
+click = true;
 const gridContainer = document.querySelector('#grid-container');
 const gridSlider = document.querySelector('#slider');
 const gridSliderOutput = document.querySelector('#output');
@@ -72,6 +73,18 @@ rainbowBtn = document.querySelector('.rainbow-btn');
 rainbowBtn.onclick = () => rainbow();
 
 
+document.querySelector('body').addEventListener('click',(e) => {
+    if(e.target.tagName != "BUTTON"){
+        click = !click;
+
+    if(click){
+        document.querySelector('.color-toggle').textContent = "COLOURING";
+    }else{
+        document.querySelector('.color-toggle').textContent = "not colouring :(";
+    }
+    }
+})
+
 function clearBoard(){
     let board = document.querySelector('#grid-container');
     let squares = board.querySelectorAll('div');
@@ -90,10 +103,12 @@ function resetBoard(){
 
 
 function colorGrid(event){
-    if(rainbowToggle){
-        event.target.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-    }else{
-        event.target.style.backgroundColor = penColor;
+    if(click){
+        if(rainbowToggle){
+            event.target.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        }else{
+            event.target.style.backgroundColor = penColor;
+        }
     }
     
 }
